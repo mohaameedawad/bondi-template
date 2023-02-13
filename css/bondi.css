@@ -1,0 +1,187 @@
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+:root {
+    --main-color: #19283f;
+    --second: #33d1cc;
+    --section-color: #eff7fa;
+    --bs-yellow: #ffc107;
+    --red-color:#ff3150;
+
+}
+/*  start navbar */
+.navbar {
+background-color: var(--main-color);
+}
+.navbar .navbar-nav .nav-link {
+    color: white;
+}
+.navbar .navbar-nav .nav-link.active,
+.navbar .navbar-nav .nav-link:focus ,
+.navbar .navbar-nav .nav-link:hover {
+    color: var(--second);
+}
+.navbar .navbar-nav .nav-link.active::after,
+.navbar .navbar-nav .nav-link:focus::after ,
+.navbar .navbar-nav .nav-link:hover::after {
+
+}
+.navbar .search {
+    border-left: 2px solid white;
+}
+.navbar .navbar-toggler {
+    box-shadow: none;
+    color: white;
+    border: 1px solid white;
+}
+a.btn.main-btn {
+    background-color: var(--red-color);
+    color: var(--bs-yellow);
+} 
+/*  end navbar */
+/* start landing */
+.landing {
+    background-color: var(--main-color);
+    height: calc( 100vh - 62px);
+} 
+
+/* end landing */
+
+.head-components::after {
+    content: "";
+    background-color: var(--second);
+    width: 120px;
+    height: 2px;
+    position: absolute;
+    bottom: 46px;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+}
+.features .icon-holder svg {
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+}
+.features .icon-holder {
+    height:200px;
+}
+.features .icon-holder .num {
+    height: 100%;
+    color: var(--section-color);
+}
+.features .icon-holder .pic {
+    color: var(--second);
+}
+.features .feat h4 {
+    color: var(--bs-yellow);
+}
+/* end features  */
+/* start our work  */
+.our-work {
+    background-color: var(--section-color);
+}
+.our-work li {
+    margin-right: 15px;
+    font-weight: bold;
+}
+.our-work li.active {
+    background-color: var(--red-color);
+    color: var(--bs-yellow);
+}
+.our-work li:not(.active):hover {
+    color: var(--red-color);
+    cursor: pointer;
+}
+.our-work .box::before {
+    content: "data-work";
+    background-color: rgb(51 209 204 / 65%);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    font-size: 18px;
+    font-weight: bold;
+    transform: translateX(-100%);
+    transition: 03s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+    -webkit-transform: translateX(-100%);
+    -moz-transform: translateX(-100%);
+    -ms-transform: translateX(-100%);
+    -o-transform: translateX(-100%);
+}
+.our-work .box:hover::before {
+    transform: translateX(0%);
+    -webkit-transform: translateX(0%);
+    -moz-transform: translateX(0%);
+    -ms-transform: translateX(0%);
+    -o-transform: translateX(0%);
+}
+/* end our work  */
+/* start stuff section  */
+section.stuff .text {
+    max-width: 500px;
+}
+/* end stuff section  */
+/* start team section  */
+section.team { 
+    background-color: var(--section-color);
+}
+section.team h4 {
+    background-color: var(--second);
+}
+/* end team section  */
+/* start project section  */
+section.project {
+    background-color: var(--main-color);
+}
+/* end project section  */
+/* start subscripe section  */
+section.subscripe input[type="submit"] {
+    background-color: var(--main-color);
+    color: var(--bs-yellow);
+}
+section.subscripe input[type="text"]:focus {
+    outline: none;
+}
+section.subscripe form input[type="text"] {
+    border: 0;
+    border-bottom: 1px solid white;
+    caret-color: white;
+}
+section.subscripe form input[type="text"]::placeholder {
+    color: white;
+    font-weight: bold;
+}
+/* end subscripe section  */
+/* start footer  */
+footer {
+    background-color: var(--main-color);
+}
+footer span.one {
+    color: var(--second);
+}
+footer .icons .icon-hold {
+    width: 40px;
+    height: 40px;
+}
+footer .icons .icon-hold svg {
+    width: 25px;
+    height: 25px;
+}
+/* end footer  */
